@@ -1,0 +1,56 @@
+.container{
+    width: 100%;
+    box-shadow: 0px 0.1px 0.3px 0.3px black;
+    position: fixed;
+    top: 0;
+    background-color: aliceblue;
+    z-index: 1;
+}
+.header{
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+}
+.left-side{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.brand-name a{
+    text-decoration: none;
+}
+.brand-name h1{
+    font-size: 25px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: bold;
+}
+.menu{
+    margin-left: 25px;
+    margin-top: 5px;
+}
+.menu ul{
+    display: flex;
+    list-style-type: none;
+    gap: 40px;
+}
+.menu a{
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    text-decoration: none;
+}
+.menu a:hover{
+    color: blue;
+}
+
+.right-side{
+    align-items: center;
+    display: flex;
+    gap: 20px;
+}
+.right-side img{
+    cursor: pointer;
+}
+

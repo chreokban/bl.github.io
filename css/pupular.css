@@ -1,0 +1,90 @@
+.pupular-product{
+    width: 70%;
+    margin: 0 15%;
+    margin-top:150px;
+    display: flex;
+    justify-content: space-between;
+}
+.pupular{
+    color: black;
+    width: 31%;
+    height: 290px;
+    position: relative;
+    border: 1px solid rgb(0, 0, 0,0.2);
+    cursor: pointer;
+}
+.pupular img{
+    width: 100%; 
+    height: 100%;
+}
+.pupular:hover{
+    color:aliceblue;
+}
+.backround{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color:blue;
+    opacity: 0;
+    transition: all 0.4s ease;
+}
+.pupular:hover .backround{
+    opacity: 0.5;
+}
+.brand-year{
+    position: absolute;
+    top: 30px;
+    left: 40px;
+    transition: all 0.4s ease;
+}
+.brand-year h1{
+    margin: 0;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 25px;
+    font-weight: bold;
+}
+.brand-year p{
+    margin-top: 10px;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+}
+
+.order{
+    position: absolute;
+    bottom: -2px;
+    left: 40px;
+    font-size: 7px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    transition: all 0.4s ease;
+    visibility: hidden;
+    color: aliceblue;
+}
+.pupular:hover .order{
+    bottom: 20px;
+    transition:all 0.55s ease;
+    visibility: visible;
+}
+.order::before{
+    content: "";
+    position:absolute;
+    width: 80px;
+    height: 1px;
+    background-color: rgb(0, 0, 0,0.2);
+    margin: 0;
+    bottom: 5px;
+    left: 0px;
+    display: none;
+    transition:all 0.55s ease;
+}
+.pupular:hover .order::before {
+    transition: all 0.55s ease;
+    display: block;
+    width: 100%;
+}
+
+
